@@ -25,6 +25,8 @@ public interface ExportadorListaProduto {
                 return new ExportadorListaProdutoHtml();
             case "md":
                 return new ExportadorListaProdutoMarkdown();
+            case "csv":
+                return new ExportadorListaProdutoCSV();
             default:
                 throw new UnsupportedOperationException("Formato de arquivo não suportado: " + extensaoArq);
                 

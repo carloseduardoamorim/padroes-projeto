@@ -27,6 +27,10 @@ public class Principal {
        ExportadorListaProduto exportadorListaMarkdown = ExportadorListaProduto.newInstance("md");
        System.out.println("Lista em Markdown");
        System.out.println(exportadorListaMarkdown.exportar(produtos));
+       
+       ExportadorListaProduto exportadorListaCSV = ExportadorListaProduto.newInstance("csv");
+       System.out.println("Lista de Produtos em CSV\n");
+       System.out.println(exportadorListaCSV.exportar(produtos));
     }
     
 }
